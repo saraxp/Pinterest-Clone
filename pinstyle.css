@@ -1,0 +1,278 @@
+p{
+    padding:0;
+    margin:0;
+}
+body {
+    padding:0;
+    width: 100%;
+    font-family:"Noto Sans", sans-serif;
+}
+
+.all-pins{
+    font-family:"Noto Sans", sans-serif;
+    padding-left: 0;
+    padding-right: 0;
+    display:flex;
+    flex-shrink:3;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: baseline;
+    position:relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 5%;
+    z-index:-1;
+ }
+
+.coloumns {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+ .pin-container {
+    display:block;
+    border-radius: 18px;
+    position: relative;
+    margin-top: 10%;
+    align-items: center;
+}
+
+.pin {
+    width:230px;
+    border-radius: 18px;
+    margin: none;
+    padding: none;
+}
+.pinBox{
+    display:block;
+    object-position:center;
+    position:static;
+}
+
+.post-title {
+    font-family:"Noto Sans", sans-serif;
+    display:inline-block;
+    font-size: small;
+}
+.post-icon {
+    display:inline-block;
+    position:relative;
+}
+.pinBox::post-icon {
+    display:inline-block;
+    position:relative;
+}
+.icon {
+    display:inline-block;
+    height:30px;
+    width:30px;
+    border-radius: 20px;
+    object-position: left;
+}
+
+.top{
+    display:flex;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    height: 80px;
+    align-items: center;
+    flex-grow: 1;
+    background-color: white;
+}
+
+.magnifying-glass {
+    color:#767676;
+    height: 20px;
+    width:20px;
+}
+
+.search {
+    font-family:"Noto Sans", sans-serif;
+    width: max-content;
+    display: inline-flex;
+    padding-left: 15px;
+    align-items: center;
+    border-radius: 28px;
+    background-color:rgba(237, 237, 237, 0.941);
+    color: rgb(51, 51, 51);
+    width: 940px;
+    height: 50px;
+    transition: background 0.25s;
+}
+
+.search:focus-within {
+    background-color: rgba(210, 210, 210, 0.925);
+}
+
+.search-bar {
+    font-size: 16px;
+    color:#767676;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+}
+
+.search-bar::placeholder {
+    color:black;
+}
+
+.notifs {
+    display:inline-flex;
+    margin-left:10px;
+    width: 40px;
+    height:40px;
+    border-radius: 40px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bell-icon {
+    color: #767676;
+    width:22px;
+    height:22px;
+}
+
+.notifs:hover{
+    background-color: rgba(237, 237, 237, 0.941);
+}
+
+.chat {
+    display:inline-flex;
+    width: 40px;
+    height:40px;
+    border-radius: 40px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-bubble {
+    width:22px;
+    height:22px;
+    color:#767676;
+}
+
+.chat:hover{
+    background-color: rgba(237, 237, 237, 0.941);
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.user-profile {
+    display: inline-flex;
+    margin-right:2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-down {
+    width: 22px;
+    height: 22px;
+    color:#767676;
+}
+
+
+.down-arrow{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height:30px;
+    border-radius: 40px;
+}
+
+.down-arrow:hover{
+    background-color: rgba(237, 237, 237, 0.941);
+}
+
+.user-icon{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height:45px;
+    border-radius: 40px; 
+}
+.u-icon {
+    border-radius: 400px;
+    height: 25px;
+    width:25px;
+}
+
+.user-icon:hover{
+    background-color: rgba(237, 237, 237, 0.941);
+}
+
+
+.top-button{
+    display:inline-flex;
+    align-self: center;
+}
+
+.home,.explore,.create {
+    display: inline-block;
+    height:50px;
+    width:80px;
+    border-radius: 30px;
+    font-family:noto sans;
+    font-size:small;
+    font-weight:bold;
+    border:none;
+    background-color: white;
+}
+
+.create {
+    margin-right: 10px;
+}
+
+.home:focus{
+    color: white;
+    background-color: black;
+}
+.explore:focus{
+    color: white;
+    background-color: black;
+}
+
+.create:focus{
+    color: white;
+    background-color: black;
+}
+
+
+.pin-logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 80px;
+    display:inline-flex;
+    margin-left: 2%;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pin-icon {
+    width: 30px;
+    height:30px;
+    color: red;
+}
+
+.pin-logo:hover{
+    background-color: rgba(237, 237, 237, 0.941);
+}
+
+

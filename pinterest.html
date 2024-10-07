@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pinterest Clone</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pinstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <div class="top">
+            <div class = "pin-logo">
+                <svg class="pin-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                </svg> 
+            </div>
+            <div class = "top-button">
+                <button class="home">Home</button>
+            </div>
+            <div class = "top-button">
+                <button class="explore">Explore</button>
+            </div>
+            <div class = "top-button">
+                <button class="create">Create</button>
+            </div>
+            <div class="search">
+                <svg aria-label="Search icon" class="magnifying-glass" fill="currentColor" role="img" viewBox="0 0 24 24" ><path d="M10 16a6 6 0 1 1 .01-12.01A6 6 0 0 1 10 16m13.12 2.88-4.26-4.26a10 10 0 1 0-4.24 4.24l4.26 4.26a3 3 0 1 0 4.24-4.24"></path></svg>
+                <input class="search-bar" type="text" placeholder="Search">
+            </div>
+            <div class = "notifs">
+                <svg aria-hidden="true" aria-label="" class="bell-icon" fill="currentColor" role="img" viewBox="0 0 24 24" ><path d="M19 7v6.17A10 10 0 0 1 22 19H2a10 10 0 0 1 3-5.83V7a7 7 0 1 1 14 0m-4 14a3 3 0 1 1-6 0z"></path></svg>
+            </div>
+            <div class = "chat">
+                <svg class="chat-bubble" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                    <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                </svg>
+            </div>
+            <div class = "user-profile">
+                <div class="user-icon">
+                   <img class="u-icon" src="images/user-photo.jpg"> 
+                </div>
+                <div class="down-arrow">
+                    <span class="drop-down material-symbols-outlined" fill="currentColor">keyboard_arrow_down</span>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="all-pins">
+            <div class="coloumns">
+                <div class="pin-container">
+                        <div class="pinBox">
+                            <img class="pin" src="https://i.pinimg.com/originals/de/bd/77/debd77014acb30b57414a5bb73ef690e.jpg"> 
+                        </div>
+                </div> 
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/236x/69/19/f1/6919f1a4a0e1a7c23e264c8deca3277b.jpg">
+                    </div>
+                    <div class="post-icon">
+                        <img class="icon" src="https://i.pinimg.com/75x75_RS/e8/54/18/e854186dcdc6b8db2108e94050e1d37c.jpg">
+                    </div>
+                </div>
+                            
+                <div class="pin-container">
+                        <div class="pinBox">
+                            <img class="pin" src="https://i.pinimg.com/564x/57/f9/ad/57f9ad92d1bba742e1881e974fc31002.jpg"> 
+                        </div>
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/6c/41/b1/6c41b186ee4b7f2482c0bb3ca551147f.jpg">   
+                    </div>
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/21/4a/a8/214aa8f19bd63da532069911c1af9fdb.jpg">  
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="coloumns">
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/27/2d/28/272d2842340aa8a68369a3827d0b5cb5.jpg"> 
+                    </div>
+                    <div class="post-icon">
+                        <img class="icon" src="https://s.pinimg.com/images/user/default_75.png">
+                    </div>
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/02/4b/52/024b523eea71fd19a51e9b3c9d2ca125.jpg">
+                    </div>
+                    <div class="post-title">
+                        <p>sunset</p>
+                    </div>
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/92/ce/1c/92ce1cac41b64a8bf2b54fe95f7f6174.jpg"> 
+                    </div>
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/d2/85/80/d28580da2642b67b0ecd44a60fef1d8f.jpg">
+                    </div>
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/474x/4a/57/0a/4a570a6fc5e3996dd8ad1586a2573ec4.jpg">
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+
+            <div class="coloumns">
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/47/f6/2a/47f62a9a51d3c5118d078e5c1e107f25.jpg"> 
+                    </div>
+                    <div class="post-icon">
+                        <img class="icon" src="https://i.pinimg.com/75x75_RS/7e/2e/54/7e2e54d706e7bb762b0de255b20a4741.jpg">
+                    </div>
+                    <div class="post-title">
+                        <p>Shop on Etsy</p>
+                    </div>
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/736x/79/a4/b0/79a4b09a8074759b40e2e4145343fae5.jpg">
+                    </div>
+                    <div class="post-title">
+                        <p>Cherry Red Leather Jacket</p>
+                    </div>
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/72/78/ae/7278aec3083d08cdf4a03eb1bce86d5e.jpg">
+                    </div>
+                </div>
+                
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/236x/e2/1d/0c/e21d0cc0f49b0822a22df8393e654c0d.jpg">
+                    </div>
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                       <img class="pin" src="https://i.pinimg.com/474x/cf/db/ba/cfdbba3c54029683239ba978d2f95b53.jpg"> 
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="coloumns">
+                
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/3e/e8/21/3ee82126b420cfdd7fb9f1c3b7883590.jpg">
+                    </div> 
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/2e/6a/5d/2e6a5dbd3d7b3326f4fa7726bffbf6bb.jpg">
+                    </div>
+                    <div class="post-title">
+                        <p>Woman in space edit</p>
+                    </div>
+                </div>
+                
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/474x/75/f0/0e/75f00e829666a0b32500258ee82bf089.jpg">
+                    </div>
+                </div> 
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/736x/a3/00/05/a30005943829e54b05bf64c44834d59b.jpg">
+                    </div>
+                </div>
+                
+                
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/09/c3/2b/09c32b7b7cf1caee55cbf155bd8f03d4.jpg">
+                    </div> 
+                </div>
+            </div>
+
+
+            <div class="coloumns">
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/d4/a0/60/d4a06070284f2d045dab9408c9f50d7d.jpg">
+                    </div> 
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/236x/16/0c/6c/160c6c152dd30fd9daa9f52baaa1d649.jpg">
+                    </div>
+                    <div class="post-icon">
+                        <img class="icon" src="https://s.pinimg.com/images/user/default_75.png">
+                    </div>
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/236x/7f/84/8a/7f848a68bd7fe4797a7844e8812a410f.jpg">
+                    </div> 
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/d8/3d/8f/d83d8fd544a1fcf9c9e91780d9a7b084.jpg"> 
+                    </div> 
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img  class="pin" src="https://i.pinimg.com/236x/bb/38/b7/bb38b7e6d45ecdd738c8f6d11f276ab6.jpg">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="coloumns">
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/af/1a/ee/af1aee609e9e08383469ce19b60598d6.jpg">  
+                    </div> 
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/236x/d2/71/ec/d271eca4854a1165eb2a6f5882413d4b.jpg">  
+                    </div> 
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/236x/bd/aa/98/bdaa98392c465ab2952f805f603a551a.jpg"> 
+                    </div> 
+                </div>
+
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/236x/d2/07/a9/d207a9221706a5e5d3891d332ab954c0.jpg">
+                    </div>
+                </div>
+                
+                <div class="pin-container">
+                    <div class="pinBox">
+                        <img class="pin" src="https://i.pinimg.com/564x/2a/8a/84/2a8a8407aa9bf4a152a6fd10593443e9.jpg">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+    </body>
+</html>
